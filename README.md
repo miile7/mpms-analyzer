@@ -1,5 +1,7 @@
 # MPMSAnalyzer
 
+**This is an old, archived and not maintained project. It does not run stable.**
+
 ## Measurement
 - **Create new files for each $`M(T)`$/$`M(H)`$ measurement.** Keep the files as short as 
   possible. The MPMSAnalyzer supports files only if they have a $`M(T)`$ **or** a $`M(H)`$ 
