@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Klassendiagramme MPMS Analyzer</title>
+        <style>
+            body{
+                font-family: sans-serif;
+                text-align: center;
+                vertical-align: middle;
+            }
+            
+            .class{
+                vertical-align: middle;
+                display: inline-block;
+                padding: 20px;
+                border: 1px solid #000;
+                margin: 5px;
+                background: #fff;
+            }
+            
+            .group{
+                vertical-align: middle;
+                border: 3px dashed #000;
+                /* max-width: calc(40% - 70px); */
+                padding: 10px;
+                /* display: inline-block; */
+                margin: 20px;
+            }
+            
+            .group[data-group-name='Controller']{
+                margin: 20px;
+                border: none;
+                background: repeating-linear-gradient(
+                  45deg,
+                  #fff,
+                  #fff 10px,
+                  #eee 10px,
+                  #eee 20px /* determines size */
+                );
+            }
+            
+            .group[data-group-name='Controller'] legend{
+                display: none;
+            }
+        </style>
+    </head>
+    <body><div class='group-higher-lvl'>
+<div class='class'>Constants</div>
+<div class='class'>my_utilities</div>
+<div class='class'>tool_background_creation</div>
+<div class='class'>tool_background_remove</div>
+<div class='class'>tool_datapoint_cut</div>
+<div class='class'>tool_export</div>
+<div class='class'>tool_format_data</div>
+</div>
+<fieldset class='group' data-group-name='View'>
+<legend>View</legend>
+<div class='class'>AboutDialog</div>
+<div class='class'>DataContainerWidget</div>
+<div class='class'>DataPointViewer</div>
+<div class='class'>MainWindow</div>
+<div class='class'>PlotCanvas</div>
+<div class='class'>PlotMenuFactory</div>
+<div class='class'>PlotWindow</div>
+<div class='class'>PreferencesDialog</div>
+<div class='class'>QCollapsableWidget</div>
+<div class='class'>SelectDataContainerWidget</div>
+<div class='group-higher-lvl'>
+<div class='class'>BackgroundCreationTool</div>
+<div class='class'>BackgroundSubtractionTool</div>
+<div class='class'>DataPointCutTool</div>
+<div class='class'>FormatDataTool</div>
+<div class='class'>Tool</div>
+<div class='class'>ToolAxisPage</div>
+<div class='class'>ToolCSVExportPage</div>
+<div class='class'>ToolInputPage</div>
+<div class='class'>ToolOutputPage</div>
+<div class='class'>ToolPlotPage</div>
+<div class='class'>ToolWizard</div>
+</div>
+</fieldset>
+<fieldset class='group' data-group-name='Controller'>
+<legend>Controller</legend>
+<div class='class'>Controller</div>
+</fieldset>
+<fieldset class='group' data-group-name='DataHandling'>
+<legend>DataHandling</legend>
+<div class='class'>DataContainer</div>
+<div class='class'>DataPoint</div>
+<div class='class'>FileOpeningWorker</div>
+<div class='class'>PlotData</div>
+<div class='class'>ToolWorker</div>
+<div class='class'>calculation</div>
+</fieldset>
+<br />
+
+    </body>
+</html>
