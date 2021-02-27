@@ -18,8 +18,9 @@ is available in the `example_data` directory.)
 ## Quickstart
 
 ### Installation
-For manual installation [archive/master.zip](download all the files), extract them and 
-execute the `Controller.py` file in the `MPMSAnalyzer` directory to run MPMSAnalyzer.
+For manual installation [https://github.com/miile7/mpms-analyzer/archive/master.zip](download all the files), 
+extract them and execute the `Controller.py` file in the `MPMSAnalyzer` directory to run 
+MPMSAnalyzer.
 
 ### Measurement
 - **Create new files for each $`M(T)`$/$`M(H)`$ measurement.** Keep the files as short as 
