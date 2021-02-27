@@ -18,7 +18,7 @@ is available in the `example_data` directory.)
 ## Quickstart
 
 ### Installation
-For manual installation [https://github.com/miile7/mpms-analyzer/archive/master.zip](download all the files), 
+For manual installation [download all the files](https://github.com/miile7/mpms-analyzer/archive/master.zip), 
 extract them and execute the `Controller.py` file in the `MPMSAnalyzer` directory to run 
 MPMSAnalyzer.
 
