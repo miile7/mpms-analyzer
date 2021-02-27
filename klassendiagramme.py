@@ -2,7 +2,7 @@
 """
 Created on Mon Mar 19 09:13:52 2018
 
-@author: Maximilian Seidler
+@author: miile7
 """
 
 import os

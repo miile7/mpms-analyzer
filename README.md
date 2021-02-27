@@ -1,6 +1,27 @@
 # MPMSAnalyzer
 
-## Measurement
+MPMSAnalyzer is a program to increase information gain from Magnetic Property Measurement 
+System (SQUID) DC-Measurements (program written for MPMS 3 by Quantum Design). 
+
+MPMSAnalyzer key features:
+- Subtract background data to remove magnetic influence of specimen holders ect.
+- Afterwards adjust the dipol fitting curve to support very small specimens
+- Exclude single points to avoid integrating bolter points
+- Interpolate (background) measurements to save time for background subtraction
+- Export to standard formats (csv)
+
+![Screenshot of MPMSAnalyzer](screenshot.jpg)
+Screenshot of MPMSAnalyzer: Original data with background subtracted and fit area cutted
+so borders do not influence the dipol fit. Every single fit can be inspected. (Used data
+is available in the `example_data` directory.)
+
+## Quickstart
+
+### Installation
+For manual installation [archive/master.zip](download all the files), extract them and 
+execute the `Controller.py` file in the `MPMSAnalyzer` directory to run MPMSAnalyzer.
+
+### Measurement
 - **Create new files for each $`M(T)`$/$`M(H)`$ measurement.** Keep the files as short as 
   possible. The MPMSAnalyzer supports files only if they have a $`M(T)`$ **or** a $`M(H)`$ 
   measurement. 
@@ -11,13 +32,13 @@
   > fields.
 - If possible: Use the exact same sequence for measuring the background.
 
-## General program use
+### General program use
 - Save the edited data right after editing. There may be crashes so do not hope for the 
   best.
 - All datapoints are divided in the Up- and the Down-Sweep. This means that all plotted 
   data and all files will have twice the amount of datapoints than in the MPMS program.
 
-## Toolbar
+### Toolbar
 - *Open/Plot/Format*: Open and plot a MPMS file. Select the `*.rw.dat` file. The `*.dat` 
   file has be in the same directory and the same name to be registered automatically. If 
   the file is not found you can select the `*.dat` file manually.
@@ -39,7 +60,7 @@
 - *Export*: Export the data to a file. This supports `*.csv` files and the MPMS `*.rw.dat`
   and the `*.dat` files. `*.csv` files are recommended.
 
-## Inspect and corect data
+### Inspect and corect data
 - Use double click on a datapoint of a measurement to open the fits. There you can see the 
   recorded data and the fit. The subtracted background data will also be displayed there 
   if you used some.
@@ -49,7 +70,7 @@
   > If background has been subtracted, there is the `probe (index)` and the 
   > `probe (position)`. They should be always congruent.
 
-## Exporting
+### Exporting
 - Use the `*.csv` format for exporting if possible.
 - Images of the plots can be created by left click and *Save* in the graph or in the 
   graph window toolbar.
