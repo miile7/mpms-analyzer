@@ -956,8 +956,6 @@ class MainWindow(QtWidgets.QMainWindow):
         tool_objs = self._getTools(tools)
         visible_output_modes = self._getOutputMode(output_modes)
         
-        print("MainWindow.actionTool(): hide_output_page: ", hide_output_page, ", tools: ", tools)
-        
         # check the sender and if it has a tool/output mode
         if isinstance(sender, QtCore.QObject):
             tool = sender.property("tool")

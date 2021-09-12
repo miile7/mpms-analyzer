@@ -13,7 +13,6 @@ import formlayout
 import re
 from matplotlib.backends.qt_editor.figureoptions import (cm, mcolors, LINESTYLES, 
                                                          DRAWSTYLES, MARKERS)
-import formlayout
 
 import View.MainWindow
 import my_utilities
@@ -24,9 +23,16 @@ class PlotMenuFactory(NavigationToolbar):
         self.toolbar_widget = QtWidgets.QToolBar()
         
         super(PlotMenuFactory, self).__init__(canvas, self.toolbar_widget, False)
+
+        self._init_plotmenu_toolbar()
     
-    def _init_toolbar(self):
-        self.basedir = os.path.join(matplotlib.rcParams['datapath'], 'images')
+    def _init_plotmenu_toolbar(self):
+        # try:
+        #     datapath = matplotlib.get_data_path()
+        # except Exception:
+        #     datapath = matplotlib.rcParams["datapath"]
+                
+        # self.basedir = os.path.join(datapath, 'images')
         self.toolitems = list(self.toolitems)
         self.toolitems.append(('Data', 'Show the data', 'icon_data.svg', self._showData))
         
@@ -456,7 +462,7 @@ class PlotMenuFactory(NavigationToolbar):
                 rgba = mcolors.to_rgba(color)
                 line.set_alpha(None)
                 line.set_color(rgba)
-                if marker is not 'none':
+                if marker != 'none':
                     line.set_marker(marker)
                     line.set_markersize(markersize)
                     line.set_markerfacecolor(markerfacecolor)

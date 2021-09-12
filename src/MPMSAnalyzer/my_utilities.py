@@ -126,7 +126,7 @@ def is_numeric(s):
             Whether the parameter is numeric or not
     """
     
-    if s is False or s is None or s is "" or s is True:
+    if s == False or s == None or s == "" or s == True:
         return False
     
     try:
