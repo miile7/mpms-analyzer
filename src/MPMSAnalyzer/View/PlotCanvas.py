@@ -1042,16 +1042,17 @@ class PlotCanvas(FigureCanvas):
     def fixLayout(self):
         """Fix the layout of the plot"""
         
-#        y = 1 - 0.03 * self._title_lines
+        # y = 1 - 0.03 * self._title_lines
         
         if len(self.axes) > 0 and len(self._plot_data) > 0 and len(self._plots) > 0:
-            fig = self.getFigure()
-            try:
-                fig.tight_layout()
-            except (ValueError, np.linalg.LinAlgError) as e:
-                print("PlotCanvas.fixLayout(): " + str(e))
-    #        fig.tight_layout(rect=[0, 0.03, 1, y])
-    #        fig.subplots_adjust(top=0.85)
+            # fig = self.getFigure()
+            # try:
+            #     fig.tight_layout()
+            # except (ValueError, np.linalg.LinAlgError) as e:
+            #     print("PlotCanvas.fixLayout(): " + str(e))
+            # fig.tight_layout(rect=[0, 0.03, 1, y])
+            # fig.subplots_adjust(top=0.85)
+            pass
         
     def contextMenuEvent(self, event):
         """Handles the context menu"""
