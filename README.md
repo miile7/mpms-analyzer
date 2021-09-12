@@ -1,5 +1,14 @@
 # MPMSAnalyzer
 
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Installation](#installation)
+3. [Quickstart](#quickstart)
+4. [Known Bugs](#known-bugs)
+
+## Overview
+
 MPMSAnalyzer is a program to increase information gain from Magnetic Property Measurement 
 System (SQUID) DC-Measurements (program written for MPMS 3 by Quantum Design). 
 
@@ -15,12 +24,41 @@ Screenshot of MPMSAnalyzer: Original data with background subtracted and fit are
 so borders do not influence the dipol fit. Every single fit can be inspected. (Used data
 is available in the `example_data` directory.)
 
-## Quickstart
+## Installation
 
-### Installation
+Open the command line (Windows: Type `cmd` in the search) and run 
+```
+pip install MPMSAnalyzer
+```
+
+Now you can start the MPMSAnalyzer by typing
+
+```
+python -m MPMSAnalyzer
+```
+
+### Shortcut (Windows only)
+
+If you prefer having a clickable program icon, create a shortcut like the following:
+
+1. Create a new junction:  
+   <img src="doc/new-junction.jpg" width="300" />
+2. Enter `python -m MPMSAnalyzer` into the input field:  
+   <img src="doc/new-junction-target.jpg" width="300" />
+3. If you like, you can change the icon of the shortcut. To do so
+   1. Download the [*MPMSAnalyzer.ico*](doc/MPMSAnalyzer.ico) image from the `doc` directory.
+   2. Now select the shortcut on your machine, then
+   3. right click on it and open the *Properties*.
+   4. In the *Junction* tab click on the *Change icon* button, then
+   5. select the *MPMSAnalyzer.ico* image.
+
+### Manual installation
+
 For manual installation [download all the files](https://github.com/miile7/mpms-analyzer/archive/master.zip), 
 extract them and execute the `Controller.py` file in the `MPMSAnalyzer` directory to run 
 MPMSAnalyzer.
+
+## Quickstart
 
 ### Measurement
 - **Create new files for each $`M(T)`$/$`M(H)`$ measurement.** Keep the files as short as 
