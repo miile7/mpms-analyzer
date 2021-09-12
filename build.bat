@@ -1,11 +1,14 @@
 @echo off
 setlocal
 
+echo "Used Python executable:"
+where python
+
 echo "Installing python build package..."
 python -m pip install --upgrade build
 
 echo "Building app..."
-python -m build
+python -m build .
 
 echo "Done."
 
